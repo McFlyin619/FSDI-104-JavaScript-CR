@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(0, 160, 253);
+}
+
+.character {
+    width: 300px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.square {
+    background-color: rgb(0, 160, 253);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: rgb(216, 0, 0);
+    color: white;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+}

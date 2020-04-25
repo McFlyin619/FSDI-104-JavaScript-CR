@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <title>Video Game</title>
+</head>
+<body>
+    
+    <h1>Welcome to my Video Game</h1>
+
+    <div class="wrap">
+
+        <div class="square">
+            <h2>Bowser</h2>
+            <div id="img-c1">
+                <img class="character"  src="img/C1.png" alt="">
+            </div><!--end img-c1-->
+
+            <div id="btn-c1">
+                <button class="btn" onclick="c1.attack(c2);">Attack</button>
+            </div><!--end btn-c1-->
+
+            <div id="info-c1">
+                <p>Character Information</p>
+            </div><!--end info-c1-->
+        </div><!--end square-->
+
+        <div class="square">
+            <h2>Mario</h2>
+            <div id="img-c2">
+                <img class="character" src="img/C2.png" alt="">
+            </div><!--end img-c1-->
+
+            <div id="btn-c2">
+                <button class="btn" onclick="c2.attack(c1);">Attack</button>
+            </div><!--end btn-c1-->
+
+            <div id="info-c2">
+                <p>Character Information</p>
+            </div><!--end info-c1-->
+        </div><!--end square-->
+    </div><!--End wrap-->
+
+<script src="js/script.js"></script>    
+</body>
+</html>
