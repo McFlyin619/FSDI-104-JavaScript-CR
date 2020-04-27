@@ -21,26 +21,35 @@ class Character {
     }
 
     // display function()
+
     display = function() {
         console.log(`${this.name} ${this.energy}`)
+
         // Display on HTML
+
         document.getElementById("info-" + this.id).innerHTML = `
         <p>
+            ${this.name}<br>
             Energy:  ${this.energy}
         </p>
         `;
     }
+
     // attack function()
+
     attack = function(opponent,item) {
         let newEnergy = opponent.energy - item.iPoints;
         opponent.energy = newEnergy;
         opponent.display();
+
         // CR challenge: Ex. bowser is attacking mario with item image
+
         document.getElementById('console').innerHTML = `
             <h2> ${this.name} is attacking ${opponent.name}!
              He used <img class="item" src="${item.iImg}"> for -${item.iPoints} energy!</h2>
         `;
         // display Game Over
+
         if (newEnergy <= 0 ) {
             document.getElementById('console').innerHTML = `
             <h1>Game Over ${this.name} Wins!</h1>
@@ -57,6 +66,7 @@ class Character {
 }
 
 // Create Character
+
 const c1 = new Character('c1','Bowser',100);
 const c2 = new Character('c2','Mario',100);
 
